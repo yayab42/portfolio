@@ -14,11 +14,24 @@
     src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
+.p {
+  position:absolute;
+  z-index: -1;
+  top:-6px;
+  left:-3px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:radial-gradient(rgba(0,255,0,.5),rgba(0,255,0,0));;
+}
+
 body{
     margin: 0%;
     font-family: Mont;
     color: white;
     background-color: #1d1d1d;
+    overflow: hidden;
+
 }
 
 #menu{
@@ -45,7 +58,6 @@ body{
     margin: 15% 0 0 21%;
     border-bottom: solid 1px rgba(194, 199, 196, 0.301);
     padding-bottom : 1.25em ;
-
 
 }
 
@@ -105,6 +117,11 @@ body{
     text-align: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.404);
+    overflow:hidden;
+    cursor:pointer;
+    max-width: 100vw;
+    max-height: 100vh;
+
 }
 
 .below{

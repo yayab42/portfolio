@@ -1,0 +1,117 @@
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+
+
+
+@font-face {
+    font-family: Mont;
+    src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+body{
+    margin: 0%;
+    font-family: Mont;
+    color: white;
+    background-color: #1d1d1d;
+}
+
+#menu{
+    background-color: #181818;
+    height: 100vh;
+    display :flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 8.5em;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+    position: fixed;
+}
+
+#logo{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: absolute ;
+    top: 0%;
+    margin: 15% 0 0 21%;
+    border-bottom: solid 1px rgba(194, 199, 196, 0.301);
+    padding-bottom : 1.25em ;
+
+
+}
+
+.identity{
+    margin-bottom: 5em;
+    font-size: 1.1em;
+}
+
+.sidenav a::before {
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+    transition: 0.3s ease-out;
+  }
+  .sidenav a:hover::before {
+    width: 100%;
+  }
+
+  .links{
+    border-top: solid 1px rgba(194, 199, 196, 0.301);
+
+  }
+
+  .sidenav{
+    margin-bottom: 7em;
+
+  }
+
+  .sidenav a {
+    padding : 1.25em 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(194, 199, 196);
+    display: block;
+    font-size: large;
+    transition: 0.2s;
+
+  }
+  #lasta{
+      border-bottom:solid 1px rgba(194, 199, 196, 0.301);
+  }
+  
+  .sidenav a:hover {
+    color:rgb(9, 241, 9);
+    transition: 0.2s 0.1s;
+
+  }
+
+.social{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}  
+
+.master{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.404);
+}
+
+.below{
+    z-index: -1;
+}
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

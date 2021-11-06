@@ -1,3 +1,5 @@
+/***************** BOOTSTRAP *****************/
+
 .disable-select {
     user-select: none; /* supported by Chrome and Opera */
    -webkit-user-select: none; /* Safari */
@@ -11,9 +13,14 @@
 
 @font-face {
     font-family: Mont;
-    src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
+    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+   
 }
 
+/***************** BOOTSTRAP *****************/
+
+
+/***************** CURSOR *****************/
 .p {
   position:absolute;
   z-index: -1;
@@ -24,15 +31,15 @@
   border-radius:50%;
   background:radial-gradient(rgba(0,255,0,.5),rgba(0,255,0,0));;
 }
+/***************** CURSOR *****************/
 
-body{
-    margin: 0%;
-    font-family: Mont;
-    color: white;
-    background-color: #1d1d1d;
-    overflow: hidden;
 
-}
+
+
+
+
+
+/***************** MENU *****************/
 
 #menu{
     background-color: #181818;
@@ -41,10 +48,8 @@ body{
     flex-flow: column nowrap;
     justify-content: center;
     width: 8.5em;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    overflow: hidden;
+    padding-top: 5px;
     text-align: center;
     position: fixed;
 }
@@ -52,9 +57,9 @@ body{
 #logo{
     display: flex;
     flex-wrap: wrap;
-    z-index: 1;
-    position: absolute ;
+    position: relative ;
     top: 0%;
+    left: 0;
     margin: 15% 0 0 21%;
     border-bottom: solid 1px rgba(194, 199, 196, 0.301);
     padding-bottom : 1.25em ;
@@ -64,7 +69,8 @@ body{
 .identity{
     margin-bottom: 5em;
     font-size: 1.1em;
-}
+  }
+
 .identity h4{
   padding-left: 5%;
   padding-right: 5%;
@@ -116,32 +122,113 @@ body{
     margin-top: 2em;
 }  
 
-.master{
-    color: rgba(255, 255, 255, 0.404);
+
+
+@media all and (max-width: 1000px){
+    #menu{
+      display: none;
+    }
+    .toggleBurgerBtn{
+      display: block;
+    }
+
+  .toggleBurgerMenu{
+    display: none;
+  }
+
+
+}
+
+@media all and (min-width: 1000px){
+  #menu{
+    display: block;
+  }
+  .toggleBurgerBtn{
+    display: none;
+  }
+  .toggleBurgerMenu{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+            /************** BURGER  ******************/
+
+
+            .toggleBurgerBtn:checked ~ .toggleBurgerMenu {
+              display: block;
+            }
+
+            
+
+
+
+            
+
+            /************** BURGER  ******************/
+
+
+
+
+
+/***************** MENU *****************/
+
+
+
+
+
+
+
+/***************** HEADER *****************/
+
+.header{
     overflow:hidden;
     cursor:pointer;
     max-width: 100vw;
     max-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 
 }
 
 .yayab{
-  grid-column: 3/5;
+  max-width: fit-content;
+  grid-column: 11/12;
   grid-row: 2;
   font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
   
 }
+/***************** HEADER *****************/
+
+
+
+
+
+
+/***************** GLOBAL *****************/
+
 .below{
     z-index: -1;
 }
 
 
+body{
+  margin: 0%;
+  font-family: Mont;
+  color: white;
+  background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+/***************** GLOBAL *****************/
+
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }

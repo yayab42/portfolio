@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../portfolio/static/stylesheets/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 
 </head>
+
 <body class="disable-select">
     
+<input id="burger" class="toggleBurgerBtn" type="checkbox" />
 
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav class="toggleBurgerMenu">    
+  <ul>
+    <li><a class="links" href="#">link</a></li>
+    <li><a class="links" href="#">link</a></li>
+    <li><a class="links" href="#">link</a></li>
+    <div class="social">
+        <a href="https://twitter.com/yayab42" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/yayab42" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </ul>  
+</nav>
     <div id="menu">
         <img id="logo" src="./static/img/Hyannye.png" alt="logo" height="75" width="75">
         <div class="identity">
@@ -36,10 +56,9 @@
 
         </div>
 
-        <div class="master" id="particles">
+        <div class="header" id="particles">
             <div class="p" id="p0"></div>
             <h1 class="below yayab">YAYAB</h1>
-
         </div>
 
     

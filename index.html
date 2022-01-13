@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../portfolio/static/stylesheets/styles.css">
+    <link rel="stylesheet" href="./static/stylesheets/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,31 +14,39 @@
 </head>
 
 <body class="disable-select">
-    
-<input id="burger" class="toggleBurgerBtn" type="checkbox" />
 
+<input id="burger" class="toggleBurgerBtn" type="checkbox" />
+ 
 <label for="burger">
     <span></span>
     <span></span>
     <span></span>
 </label>
 
-<nav class="toggleBurgerMenu">    
-  <ul>
-    <li><a class="links" href="#">link</a></li>
-    <li><a class="links" href="#">link</a></li>
-    <li><a class="links" href="#">link</a></li>
-    <div class="social">
-        <a href="https://twitter.com/yayab42" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/yayab42" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-  </ul>  
+<nav class="toggleBurgerMenu">   
+  
+  <div class="burgerIdentity">
+    <img id="logoInBurger" src="./static/img/Hyannye.png" alt="logo" height="75" width="75">
+    <h4>Yannis "yayab" BOUNIA</h4>
+    <p>Développeur | Streamer | Animateur</p>
+  </div> 
+  <div class="linksBurger">
+    <a class="links" href="#">link</a>
+    <a class="links" href="#">link</a>
+    <a class="links" href="#">link</a></li>
+    <a class="links" id="lasta" href="#">link</a>
+  </div>  
+  <div class="socialBurger">
+    <a style="padding-right: 12px;" href="https://twitter.com/yayab42" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a style="padding-left: 12px;" href="https://github.com/yayab42" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
 </nav>
     <div id="menu">
+      <div class="identity">
         <img id="logo" src="./static/img/Hyannye.png" alt="logo" height="75" width="75">
-        <div class="identity">
+       
         <h4>Yannis "yayab" BOUNIA</h4>
-        <h4>Developpeur streamer Animateur</h4>
+        <p>Développeur Streamer Animateur</p>
 
         </div>
         <div class="sidenav">

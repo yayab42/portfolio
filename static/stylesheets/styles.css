@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: Mont;
-    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+    src: url("../fonts/CoolveticaRgRegular/font.woff");
    
 }
 
@@ -391,6 +391,31 @@
   color: rgba(255, 255, 255, 0.158);
   
 }
+
+
+.bienvenue{
+  padding-left: 50px;
+  max-width: fit-content;
+  grid-column: 3/12;
+  grid-row: 2;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+          /***********************welcome******************/
+
+
+
+          /***********************welcome******************/
+
 /***************** HEADER *****************/
 
 

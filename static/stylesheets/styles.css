@@ -131,13 +131,16 @@
 @media all and (max-width: 1000px){
     #menu{
       display: none;
+      overflow: hidden;
     }
     .toggleBurgerBtn{
       display: block;
+      overflow: hidden;
     }
 
     .toggleBurgerMenu{
     display: none;
+    overflow: hidden;
   
   }
 
@@ -147,12 +150,15 @@
 @media all and (min-width: 1000px){
   #menu{
     display: block;
+    overflow: hidden;
   }
   .toggleBurgerBtn{
     display: none;
+    overflow: hidden;
   }
   .toggleBurgerMenu{
     display: none;
+    overflow: hidden;
     
   }
 
@@ -398,7 +404,7 @@
   max-width: fit-content;
   grid-column: 3/12;
   grid-row: 2;
-  font-size: 6vh;
+  font-size: min(10vw, 9vh) ;
   color: rgb(255, 255, 255);
 }
 

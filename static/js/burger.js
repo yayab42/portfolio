@@ -7,10 +7,11 @@ function check(){
             $('.toggleBurgerMenu').css('flex-direction','column')
             $('.toggleBurgerMenu').css('justify-content', 'space-between')
             $('.toggleBurgerMenu').css('background-color', '#181818')
-
+            $('.allContent').css('display', 'none')
         }
         else {
             $('.toggleBurgerMenu').css('display', 'none')
+            $('.allContent').css('display', 'grid')
 
         }
     })

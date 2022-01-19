@@ -48,7 +48,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     width: 8.5em;
-    overflow: hidden;
+    overflow-x: hidden;
     text-align: center;
     position: fixed;
 }
@@ -131,16 +131,16 @@
 @media all and (max-width: 1000px){
     #menu{
       display: none;
-      overflow: hidden;
+      overflow-x: hidden;
     }
     .toggleBurgerBtn{
       display: block;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .toggleBurgerMenu{
     display: none;
-    overflow: hidden;
+    overflow-x: hidden;
   
   }
 
@@ -150,15 +150,15 @@
 @media all and (min-width: 1000px){
   #menu{
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .toggleBurgerBtn{
     display: none;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .toggleBurgerMenu{
     display: none;
-    overflow: hidden;
+    overflow-x: hidden;
     
   }
 
@@ -377,7 +377,7 @@
 /***************** HEADER *****************/
 
 .header{
-    overflow:hidden;
+    overflow-x:hidden;
     /* cursor:pointer; */
     max-width: 100vw;
     max-height: 100vh;
@@ -457,7 +457,7 @@ body{
   font-family: Mont;
   color: white;
   background-color: #1d1d1d;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /***************** GLOBAL *****************/

@@ -465,6 +465,7 @@
   overflow-x:hidden;
   width: 90vw;
   margin-left: 10vw;
+  padding-left: 5vw;
   font-size: min(7vw, 6vh) ;
   color: rgb(66, 255, 125);
   flex-wrap: wrap;
@@ -480,6 +481,7 @@
   font-size: 1.1rem;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 5vw;
   margin-left: 10vw;
   margin-right: 10vw;
 
@@ -488,6 +490,25 @@
 
 /*****************PRESENTATION*************/
 
+.competences{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 90vw;
+}
+
+/****************COMPETENCES***************/
+
+.tagcloud {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 20px;
+  font-weight: 650;
+}
+.tagcloud--item:hover {
+  color: #36454F;
+}
+
+/****************COMPETENCES***************/
 
 
 /***************** GLOBAL *****************/

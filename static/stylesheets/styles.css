@@ -451,21 +451,20 @@
 /*****************PRESENTATION*************/
 
 .presentation{
-  overflow-x:hidden;
-  max-width: 100vw;
   display: flex;
-  padding-top: 35vh;
-  /* padding-left: 9vw; */
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 90vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
 
 }
 
 #whoami{
   overflow-x:hidden;
-  width: 90vw;
-  margin-left: 10vw;
-  padding-left: 5vw;
+  width: fit-content;
+  margin-top: 30vh;
+  margin-left: 20vw;
   font-size: min(7vw, 6vh) ;
   color: rgb(66, 255, 125);
   flex-wrap: wrap;
@@ -490,24 +489,94 @@
 
 /*****************PRESENTATION*************/
 
-.competences{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  max-width: 90vw;
-}
+
 
 /****************COMPETENCES***************/
 
-.tagcloud {
-  font-family: 'Poppins', sans-serif;  
-  font-size: 20px;
-  font-weight: 650;
-}
-.tagcloud--item:hover {
-  color: #36454F;
+
+
+.competences{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 90vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60vw;
+
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 10vw; */
+
+}
+
+          /******* flipping card *********/
+
+                /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+                .flip-card {
+                  background-color: transparent;
+                  margin: 8px;
+                  width: max(min(200px), 20vw, 15vw);
+                  height: max(min(120px), 12vw, 8vw);
+                  border: 1px solid #f1f1f1;
+
+                }
+
+                /* This container is needed to position the front and back side */
+                .flip-card-inner {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  transition: transform 0.8s;
+                  transform-style: preserve-3d;
+                }
+
+                /* Do an horizontal flip when you move the mouse over the flip box container */
+                .flip-card:hover .flip-card-inner {
+                  transform: rotateY(180deg);
+                }
+
+                /* Position the front and back side */
+                .flip-card-front, .flip-card-back {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  -webkit-backface-visibility: hidden; /* Safari */
+                  backface-visibility: hidden;
+                }
+
+                /* Style the front side (fallback if image is missing) */
+                .flip-card-front {
+                  background-color: #bbb;
+                  color: black;
+                }
+
+                /* Style the back side */
+                .flip-card-back {
+                  background-color: dodgerblue;
+                  color: white;
+                  transform: rotateY(180deg);
+                }
+          /******* flipping card *********/
+
+
+          
+#myCanvas{
+  height : 80%;
+}
+            
 /****************COMPETENCES***************/
 
 
@@ -519,11 +588,17 @@
 
 
 body{
+  max-width: 100vw;
   margin: 0%;
   font-family: Mont;
   color: white;
   background-color: #1d1d1d;
   overflow-x: hidden;
+}
+
+.allContent{
+  overflow-x:hidden;
+
 }
 
 /***************** GLOBAL *****************/

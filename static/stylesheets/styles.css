@@ -709,6 +709,7 @@
                   transform: rotateY(180deg);
                   -webkit-backface-visibility: hidden; /* Safari */
                   backface-visibility: hidden;
+                  transform-style: preserve-3d;
                 }
 
                 /* Position the front and back side */
@@ -718,6 +719,7 @@
                   height: 100%;
                   -webkit-backface-visibility: hidden; /* Safari */
                   backface-visibility: hidden;
+                  transform-style: preserve-3d;
                 }
 
                 /* Style the front side (fallback if image is missing) */

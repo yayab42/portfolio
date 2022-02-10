@@ -736,7 +736,7 @@
                   transform: rotateY(180deg);
                   flex-direction: column;
                   flex-wrap: wrap;
-                  font-size: max(min(50%),0.8vw);
+                  font-size: max(min(50%),0.7vw);
                   text-align: center;
                 }
 

@@ -421,13 +421,17 @@
 
 
             /*******************SCROLL DOWN ****************/
-
+            #scroll_down{
+              display: flex;
+              justify-content: center;
+              width: 90vw;
+              
+            }
             .container {
               position: relative;
               width: 24px;
               height: 24px;
               padding-bottom: 20vh;
-              padding-left: 45vw;
               padding-top: 10vh;
             }
             

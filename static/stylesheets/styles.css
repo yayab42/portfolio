@@ -707,6 +707,8 @@
                 /* Do an horizontal flip when you move the mouse over the flip box container */
                 .flip-card:hover .flip-card-inner {
                   transform: rotateY(180deg);
+                  -webkit-backface-visibility: hidden; /* Safari */
+                  backface-visibility: hidden;
                 }
 
                 /* Position the front and back side */

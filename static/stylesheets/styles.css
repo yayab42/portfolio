@@ -735,7 +735,8 @@
                   color: white;
                   transform: rotateY(180deg);
                   flex-direction: column;
-                  font-size: small;
+                  flex-wrap: wrap;
+                  font-size: max(min(55vw, 1vw), 0.5vw);
                   text-align: center;
                 }
 

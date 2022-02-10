@@ -498,6 +498,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   max-width: 90vw;
   margin-right: 10vw;
   margin-left: 10vw;
@@ -534,6 +535,38 @@
                 .icons{
                   height: 4vh;
                   width: 4vh;
+                }
+                .back_web{
+                  background-image: url("../img/web_blur.jpg");
+                  background-size: cover;
+                  background-position: center;
+                }
+                .web{
+                  background-image: url("../img/web.jpg");
+                  background-size: cover;
+                  background-position: center;
+                }
+                .ops{
+                  background-image: url("../img/ops.jpg");
+                  background-size: cover;
+                  background-position: center;
+                }
+                .back_ops{
+                  background-image: url("../img/ops_blur.jpg");
+                  background-size: cover;
+                  background-position: center;
+                  
+                }
+                .soft{
+                  background-image: url("../img/Difference.jpg");
+                  background-size: cover;
+                  background-position: center;
+                }
+
+                .back_soft{
+                  background-image: url("../img/Difference_blur.jpg");
+                  background-size: cover;
+                  background-position: center;
                 }
 
                 .top3{
@@ -639,12 +672,10 @@ body{
   color: white;
   background-color: #1d1d1d;
   overflow-x: hidden;
+  height: 100vh;
 }
 
-.allContent{
-  overflow-x:hidden;
 
-}
 
 /***************** GLOBAL *****************/
 

@@ -577,6 +577,16 @@
 
 }
 
+
+.qui{
+  position: absolute;
+  letter-spacing: 3px;
+  top: 120%;
+  right: 1vw;
+  justify-content: right;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
+}
 /*****************PRESENTATION*************/
 
 
@@ -615,7 +625,7 @@
 .skills{
   position: absolute;
   letter-spacing: 3px;
-  top: 120vh;
+  top: 160%;
   right: 1vw;
   justify-content: right;
   font-size: 10em;
@@ -763,7 +773,7 @@
 .works{
   position: absolute;
   letter-spacing: 3px;
-  top: 180vh;
+  top: 280%;
   right: 1vw;
   justify-content: right;
   font-size: 10em;
@@ -775,6 +785,11 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.technos img{
+  height: 3vw;
+  width: 3vw;
 }
 
 .the_projet{
@@ -812,6 +827,7 @@
 
 .flex-center{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -838,6 +854,30 @@ body{
   background-color: #1d1d1d;
   overflow-x: hidden;
   height: 100vh;
+}
+
+@font-face {
+  font-family: Citation;
+  src: url("../fonts/Coustard-Regular.ttf");
+}
+
+.citation{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  font-family: Citation;
+  font-size: 3em;
+  padding-left: 3vw;
+  padding-top: 7vh;
+
+}
+
+.author{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 20vw;
+  
 }
 
 

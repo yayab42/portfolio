@@ -10,6 +10,35 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }      
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      };
+      </script>
     
     
 
@@ -182,7 +211,7 @@
               <a href="#" style="font-size: 4.8ex">script</a>
 
               </div>
-              <link rel="import" href="chat.html">
+              <div w3-include-html="chat.html"></div> 
               <p data-aos="fade-zoom-in"class="desc">Yannis "yayab" Bounia, passionné de nouvelles technologies, numérique et jeux-vidéos. <br>
                 Actuellement développeur informatique dans le domaine de l'IoT, le monde de l'informatique a toujours fait partie de ma vie. <br>
                 D'abord animateur socio-éducatif et formateur informatique, je suis passé par l'animation web sur twitch pour finir par m'épanouir dans le développement. 
@@ -202,6 +231,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+<script>
+  includeHTML();
+  </script>
 <script>
   AOS.init();
 </script>

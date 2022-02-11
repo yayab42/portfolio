@@ -756,6 +756,51 @@
 /****************COMPETENCES***************/
 
 
+
+
+/****************REALISATIONS**************/
+
+.works{
+  position: absolute;
+  letter-spacing: 3px;
+  top: 180vh;
+  right: 1vw;
+  justify-content: right;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
+}
+
+.the_chat{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.work{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+#chatbox{
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 50vh;
+  overflow: hidden;
+}
+/****************REALISATIONS**************/
+
+
+
+
+
+
+
 /***************** GLOBAL *****************/
 
 .below{

@@ -788,8 +788,12 @@
 }
 
 .technos img{
-  height: 3vw;
-  width: 3vw;
+  height: max(min(3vw), 5vw);
+  width: max(min(3vw), 5vw);
+}
+
+.IoT{
+  padding-top: 4vw;
 }
 
 .the_projet{

@@ -1,0 +1,123 @@
+/* Base Styles
+********************************************************************* */
+
+
+.bg {
+    padding-top: 4vh;
+    overflow: hidden;
+    text-align:center;
+  }
+  .icons, .atom, .sofa, .drop, .calendar, .key, .sensor, .sun, .piggy, .fan {
+   transform-origin: 50% 50%;
+  }
+  .icons {
+    animation: spin 8s infinite linear;
+  }
+  @keyframes spin {
+    from { 
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  
+  .atom {
+    animation: spin-reverse 8s infinite linear;
+  }
+  @keyframes spin-reverse {
+    from { 
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  .sofa, .drop, .calendar, .key, .sensor, .sun, .piggy, .fan {
+    animation: spin-micro 8s infinite linear;
+  }
+  @keyframes spin-micro {
+    0% { 
+      -webkit-transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+    }
+    75% {
+      -webkit-transform: rotate(270deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  /* For devices larger than 400px */
+  @media (min-width: 400px) {
+  .container {
+      width: 85%;
+      padding: 0;
+  }
+  }
+  @media (min-width: 1000px){
+  .three.columns {
+      width: 22%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    
+  
+   
+    .three.columns {
+      width: 100%;
+      height: 100%;
+      margin-left: 0; 
+      padding: 10px;
+    }
+    
+    .three.columns img {
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+  /* For devices larger than 550px */
+  @media (min-width: 550px) {
+    
+    
+    .three.columns {
+      width: 33%;
+      height: 100%;
+      margin-left: 0; 
+      padding: 10px;
+    }
+    
+    .three.columns img {
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+   
+  /* Header Section
+  ********************************************************************* */
+  
+  
+  header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    width: 100%;
+      height: 100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+}

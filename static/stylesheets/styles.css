@@ -773,9 +773,16 @@
 .the_chat{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.the_projet{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
 .work{
   display: flex;
   justify-content: center;
@@ -787,11 +794,26 @@
 }
 
 #chatbox{
-  display: flex;
-  flex-wrap: wrap;
   height: 80vh;
-  width: 50vh;
   overflow: hidden;
+}
+
+#chat-page{
+  right: 4vw;
+}
+
+.explaination{
+  overflow-x:hidden;
+  font-size: 1.1rem;
+  width: 50vw;
+  padding-left: 5vw;
+  padding-bottom: 3vh;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /****************REALISATIONS**************/
 

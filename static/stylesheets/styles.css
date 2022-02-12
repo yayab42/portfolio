@@ -547,6 +547,9 @@
   max-width: 90vw;
   margin-right: 10vw;
   margin-left: 10vw;
+  scroll-margin-top: 55vh;
+  
+  
 
 }
 
@@ -603,6 +606,7 @@
   max-width: 90vw;
   margin-right: 10vw;
   margin-left: 10vw;
+  scroll-margin-top: 40vh;
 }
 
 
@@ -778,6 +782,7 @@
   justify-content: right;
   font-size: 10em;
   color: rgba(255, 255, 255, 0.158);
+  
 }
 
 .the_chat{
@@ -790,6 +795,7 @@
 .technos img{
   height: max(min(3vw), 5vw);
   width: max(min(3vw), 5vw);
+  padding-bottom: 6vh;
 }
 
 .IoT{
@@ -810,6 +816,7 @@
   max-width: 90vw;
   margin-right: 10vw;
   margin-left: 10vw;
+  scroll-margin-top: 30vh;
 }
 
 #chatbox{
@@ -838,6 +845,210 @@
 
 
 
+/****************FORMATIONS**************/
+
+.study{
+  position: absolute;
+  letter-spacing: 3px;
+  top: 500%;
+  right: 1vw;
+  justify-content: right;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
+  
+}
+
+.formations{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************FORMATIONS**************/
+
+
+
+
+/****************CONTACT**************/
+
+.study{
+  position: absolute;
+  letter-spacing: 3px;
+  top: 500%;
+  right: 1vw;
+  justify-content: right;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
+  
+}
+
+
+.myContact{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  scroll-margin-top: 30vh;
+  padding-bottom: 20vh;
+}
+
+.contactForm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  width: 60vw;
+  height: 65vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1px;
+  background-color: #1d1d1d;
+  /* border: 1px solid rgba(66, 255, 126, 0.11); */
+
+}
+
+.contactForm input{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 1px;
+  background-color: #2b2b2b;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding-left: 0.5vw;
+}
+.contactForm button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 5vh;
+  font-size: min(2vw, 1vw);
+  background-color: rgb(66, 255, 125);
+  color: rgb(255, 255, 255);
+  right: 4vw;
+}
+
+
+.contactForm label{
+  display: none;
+}
+
+.submitBtn{
+  display: flex;  
+  justify-content: end;
+  flex-wrap: wrap;
+  margin-bottom: 1vh;
+  margin-top: 4vh;
+
+}
+
+.names{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 55vw;
+  padding-top: 2vh;
+}
+
+.names input{
+  width: 25vw;
+  height: 5vh;
+  font-size: 1.1rem;
+}
+
+.infos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 55vw;
+  margin-top: 2vh;
+}
+
+.infos input{
+  width: 25vw;
+  height: 5vh;
+  font-size: 1.1rem;
+}
+
+.messageArea{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 55vw;
+  margin-top: 2vh;
+  color: rgb(255, 255, 255);
+}
+
+.messageArea textarea{
+  width: 53vw;
+  max-width: 53vw;
+  height: 30vh;
+  max-height: 30vh;
+  font-size: 1.1rem;
+  background-color: #2b2b2b;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding-left: 0.5vw;
+
+
+}
+
+
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.input{
+  border: 0;
+
+}
+.input ~ .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+}
+
+.input:focus ~ .border {
+  width: 100%;
+  transition: 0.5s;
+}
+.border {
+  border: 1px solid rgb(66, 255, 125);
+}
+
+.out {
+  position: relative;
+}
+
+.powered{
+  color: rgba(255, 255, 255, 0.158);
+  
+}
+
+.powered a{
+  color: rgba(255, 255, 255, 0.158);
+
+}
+
+.contact{
+  position: absolute;
+  letter-spacing: 3px;
+  top: 550%;
+  right: 1vw;
+  justify-content: right;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.158);
+  
+}
+/****************CONTACT**************/
 
 
 

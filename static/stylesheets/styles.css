@@ -1085,7 +1085,6 @@ textarea:focus, input:focus{
   display: flex;
   justify-content:center ;
   width: 100%;
-  padding-right: 10vw;
   text-align: center;
 }
 

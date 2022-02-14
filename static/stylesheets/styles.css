@@ -939,7 +939,7 @@
 
 .submitBtn{
   display: flex;  
-  justify-content: end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   margin-bottom: 1vh;
   margin-top: 4vh;
